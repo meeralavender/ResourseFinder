@@ -331,8 +331,459 @@
       "deadline": "30th April 2025",
       "applicationLink": "https://example.com/apply"
     }
+  ],
+  "exams": [
+    {
+      "id": 1,
+      "name": "JEE Main",
+      "type": "Engineering Entrance",
+      "provider": "National Test Agency (NTA)",
+      "eligibility": {
+        "minAge": 16,
+        "maxAge": 25,
+        "courses": ["12th"],
+        "streams": ["science-pcm"],
+        "passingYears": ["2025", "2024", "2023"]
+      },
+      "description": "Joint Entrance Examination for admission to engineering colleges",
+      "examDate": "April 2025",
+      "applicationDeadline": "31st March 2025",
+      "registrationLink": "https://jeemain.nta.ac.in"
+    },
+    {
+      "id": 2,
+      "name": "JEE Advanced",
+      "type": "Engineering Entrance",
+      "provider": "Indian Institute of Technology",
+      "eligibility": {
+        "minAge": 17,
+        "maxAge": 25,
+        "courses": ["12th"],
+        "streams": ["science-pcm"],
+        "passingYears": ["2025", "2024"]
+      },
+      "description": "Advanced entrance exam for top engineering institutes",
+      "examDate": "May 2025",
+      "applicationDeadline": "30th April 2025",
+      "registrationLink": "https://jeeadv.ac.in"
+    },
+    {
+      "id": 3,
+      "name": "NEET",
+      "type": "Medical Entrance",
+      "provider": "National Test Agency (NTA)",
+      "eligibility": {
+        "minAge": 17,
+        "maxAge": 25,
+        "courses": ["12th"],
+        "streams": ["science-pcb"],
+        "passingYears": ["2025", "2024", "2023"]
+      },
+      "description": "National Eligibility cum Entrance Test for medical colleges",
+      "examDate": "May 2025",
+      "applicationDeadline": "30th April 2025",
+      "registrationLink": "https://www.bing.com/ck/a?!&&p=2ee07ffdc64fd4debe13c136c6fb9350c8dc595b57ccd6fafa3ab72b73f55748JmltdHM9MTc3MDk0MDgwMA&ptn=3&ver=2&hsh=4&fclid=2f8797f4-93ea-6341-2194-81ad924762e0&psq=neet.nta.exam.in&u=a1aHR0cHM6Ly9uZWV0Lm50YS5uaWMuaW4v"
+    },
+    {
+      "id": 4,
+      "name": "CAT",
+      "type": "Management Entrance",
+      "provider": "Indian Institute of Management",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 35,
+        "courses": ["bachelor"],
+        "streams": ["engineering", "commerce", "arts"],
+        "passingYears": ["2024", "2023", "2022", "2021"]
+      },
+      "description": "Common Admission Test for management programs",
+      "examDate": "January 2025",
+      "applicationDeadline": "31st December 2024",
+      "registrationLink": "https://catexam.nta.ac.in"
+    },
+    {
+      "id": 5,
+      "name": "GATE",
+      "type": "Post-Graduate Entrance",
+      "provider": "Indian Institute of Technology",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 55,
+        "courses": ["bachelor", "diploma"],
+        "streams": ["engineering"],
+        "passingYears": ["2024", "2023", "2022", "2021"]
+      },
+      "description": "Graduate Aptitude Test in Engineering for postgraduate programs",
+      "examDate": "February 2025",
+      "applicationDeadline": "31st January 2025",
+      "registrationLink": "https://gate.iitb.ac.in"
+    },
+    {
+      "id": 6,
+      "name": "SSC CGL",
+      "type": "Competitive Exam",
+      "provider": "Staff Selection Commission",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 32,
+        "courses": ["12th", "bachelor"],
+        "streams": ["general", "commerce", "arts"],
+        "passingYears": ["2025", "2024", "2023"]
+      },
+      "description": "Combined Graduate Level Exam for government jobs",
+      "examDate": "June 2025",
+      "applicationDeadline": "31st May 2025",
+      "registrationLink": "https://ssc.nic.in"
+    },
+    {
+      "id": 7,
+      "name": "UPSC IAS",
+      "type": "Competitive Exam",
+      "provider": "Union Public Service Commission",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 32,
+        "courses": ["bachelor"],
+        "streams": ["general", "commerce", "arts", "engineering"],
+        "passingYears": ["2024", "2023", "2022"]
+      },
+      "description": "Union Public Service Commission Exam for IAS/IPS officers",
+      "examDate": "June 2025",
+      "applicationDeadline": "31st May 2025",
+      "registrationLink": "https://upsc.gov.in"
+    },
+    {
+      "id": 8,
+      "name": "CLAT",
+      "type": "Law Entrance",
+      "provider": "Consortium of National Law Universities",
+      "eligibility": {
+        "minAge": 19,
+        "maxAge": 24,
+        "courses": ["12th", "bachelor"],
+        "streams": ["general", "commerce", "arts"],
+        "passingYears": ["2025", "2024", "2023"]
+      },
+      "description": "Common Law Admission Test for law colleges",
+      "examDate": "December 2024",
+      "applicationDeadline": "31st October 2024",
+      "registrationLink": "https://consortiumofnlus.ac.in"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "name": "Software Developer",
+      "company": "Tech Solutions Inc",
+      "jobType": "Full-time",
+      "location": "Bangalore",
+      "salary": "₹6,00,000 - ₹10,00,000 per annum",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 35,
+        "qualifications": ["bachelor", "master"],
+        "experience": ["fresher", "0-1", "1-2", "2-3"],
+        "minExperience": 0,
+        "maxExperience": 3
+      },
+      "description": "Looking for skilled software developers to join our growing team",
+      "postedDate": "2024-12-10",
+      "applicationDeadline": "31st January 2025",
+      "applyLink": "https://jobs.techsolutions.com"
+    },
+    {
+      "id": 2,
+      "name": "Data Analyst",
+      "company": "Analytics Corp",
+      "jobType": "Full-time",
+      "location": "Mumbai",
+      "salary": "₹5,00,000 - ₹8,00,000 per annum",
+      "eligibility": {
+        "minAge": 22,
+        "maxAge": 32,
+        "qualifications": ["bachelor", "master"],
+        "experience": ["fresher", "0-1", "1-2"],
+        "minExperience": 0,
+        "maxExperience": 2
+      },
+      "description": "Seeking data analysts with strong analytical and problem-solving skills",
+      "postedDate": "2024-12-08",
+      "applicationDeadline": "30th January 2025",
+      "applyLink": "https://jobs.analyticscorp.com"
+    },
+    {
+      "id": 3,
+      "name": "Senior Project Manager",
+      "company": "Business Consulting Ltd",
+      "jobType": "Full-time",
+      "location": "Delhi",
+      "salary": "₹12,00,000 - ₹18,00,000 per annum",
+      "eligibility": {
+        "minAge": 28,
+        "maxAge": 45,
+        "qualifications": ["bachelor", "master"],
+        "experience": ["5-7", "7-10", "10+"],
+        "minExperience": 5,
+        "maxExperience": 20
+      },
+      "description": "We need experienced project managers to lead cross-functional teams",
+      "postedDate": "2024-12-05",
+      "applicationDeadline": "25th January 2025",
+      "applyLink": "https://jobs.businessconsult.com"
+    },
+    {
+      "id": 4,
+      "name": "Graphic Designer",
+      "company": "Creative Studios",
+      "jobType": "Part-time",
+      "location": "Pune",
+      "salary": "₹3,00,000 - ₹5,00,000 per annum",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 30,
+        "qualifications": ["diploma", "bachelor"],
+        "experience": ["fresher", "0-1", "1-2"],
+        "minExperience": 0,
+        "maxExperience": 2
+      },
+      "description": "Join our team to create stunning visual content and designs",
+      "postedDate": "2024-12-12",
+      "applicationDeadline": "15th February 2025",
+      "applyLink": "https://jobs.creativestudios.com"
+    },
+    {
+      "id": 5,
+      "name": "Banking Officer",
+      "company": "National Bank of India",
+      "jobType": "Full-time",
+      "location": "Hyderabad",
+      "salary": "₹7,00,000 - ₹11,00,000 per annum",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 28,
+        "qualifications": ["bachelor"],
+        "experience": ["fresher"],
+        "minExperience": 0,
+        "maxExperience": 0
+      },
+      "description": "Recruitment for banking officer positions in various branches",
+      "postedDate": "2024-12-01",
+      "applicationDeadline": "31st December 2024",
+      "applyLink": "https://jobs.nationalbank.co.in"
+    },
+    {
+      "id": 6,
+      "name": "Sales Executive",
+      "company": "Retail Enterprises",
+      "jobType": "Full-time",
+      "location": "Chennai",
+      "salary": "₹4,00,000 - ₹7,00,000 per annum",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 35,
+        "qualifications": ["12th", "diploma", "bachelor"],
+        "experience": ["fresher", "0-1", "1-2", "2-3"],
+        "minExperience": 0,
+        "maxExperience": 3
+      },
+      "description": "Looking for motivated sales professionals to meet targets",
+      "postedDate": "2024-12-11",
+      "applicationDeadline": "20th January 2025",
+      "applyLink": "https://jobs.retailenterprises.com"
+    },
+    {
+      "id": 7,
+      "name": "Nurse",
+      "company": "City Hospital",
+      "jobType": "Full-time",
+      "location": "Kolkata",
+      "salary": "₹3,50,000 - ₹5,50,000 per annum",
+      "eligibility": {
+        "minAge": 22,
+        "maxAge": 40,
+        "qualifications": ["diploma", "bachelor"],
+        "experience": ["fresher", "0-1", "1-2", "2-3"],
+        "minExperience": 0,
+        "maxExperience": 3
+      },
+      "description": "Recruitment for nursing positions in our multi-specialty hospital",
+      "postedDate": "2024-12-09",
+      "applicationDeadline": "10th February 2025",
+      "applyLink": "https://jobs.cityhospital.com"
+    },
+    {
+      "id": 8,
+      "name": "Digital Marketing Manager",
+      "company": "Digital Marketing Agency",
+      "jobType": "Full-time",
+      "location": "Gurgaon",
+      "salary": "₹8,00,000 - ₹12,00,000 per annum",
+      "eligibility": {
+        "minAge": 24,
+        "maxAge": 38,
+        "qualifications": ["bachelor"],
+        "experience": ["1-2", "2-3", "3-5"],
+        "minExperience": 1,
+        "maxExperience": 5
+      },
+      "description": "Seeking experienced digital marketing managers for strategic roles",
+      "postedDate": "2024-12-07",
+      "applicationDeadline": "5th February 2025",
+      "applyLink": "https://jobs.digitalmarketingagency.com"
+    }
+  ],
+  "government": [
+    {
+      "id": 1,
+      "name": "Prime Minister's Mudra Loan Scheme",
+      "category": "Entrepreneurship",
+      "provider": "Government of India",
+      "benefitAmount": "Up to ₹10 lakhs",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 65,
+        "genders": ["male", "female"],
+        "jobStatus": ["unemployed", "self-employed"],
+        "minIncome": 0,
+        "maxIncome": 500000,
+        "states": ["all"]
+      },
+      "description": "Collateral-free business loan for entrepreneurs and small business owners",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://mudra.org.in"
+    },
+    {
+      "id": 2,
+      "name": "Ayushman Bharat - PMJAY",
+      "category": "Healthcare",
+      "provider": "Ministry of Labour and Employment",
+      "benefitAmount": "Up to ₹5 lakhs health coverage",
+      "eligibility": {
+        "minAge": 0,
+        "maxAge": 100,
+        "genders": ["male", "female"],
+        "jobStatus": ["unemployed", "self-employed", "employed"],
+        "minIncome": 0,
+        "maxIncome": 300000,
+        "states": ["all"]
+      },
+      "description": "Health scheme covering hospitalization for poor families",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://pmjay.gov.in"
+    },
+    {
+      "id": 3,
+      "name": "Pradhan Mantri Jan Dhan Yojana",
+      "category": "Banking",
+      "provider": "Ministry of Finance",
+      "benefitAmount": "Zero-balance savings account with coverage",
+      "eligibility": {
+        "minAge": 0,
+        "maxAge": 100,
+        "genders": ["male", "female"],
+        "jobStatus": ["all"],
+        "minIncome": 0,
+        "maxIncome": 1000000,
+        "states": ["all"]
+      },
+      "description": "Universal access to banking services for all citizens",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://pmjdy.gov.in"
+    },
+    {
+      "id": 4,
+      "name": "Sukanya Samriddhi Yojana",
+      "category": "Child Welfare",
+      "provider": "Ministry of Women and Child Development",
+      "benefitAmount": "Flexible savings scheme for girl child",
+      "eligibility": {
+        "minAge": 0,
+        "maxAge": 10,
+        "genders": ["female"],
+        "jobStatus": ["all"],
+        "minIncome": 0,
+        "maxIncome": 1000000,
+        "states": ["all"]
+      },
+      "description": "Savings scheme for girl child education and marriage",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://ssymis.nic.in"
+    },
+    {
+      "id": 5,
+      "name": "Pradhan Mantri Ujjwala Yojana",
+      "category": "Household Utilities",
+      "provider": "Ministry of Petroleum",
+      "benefitAmount": "Free LPG connection and first refill",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 100,
+        "genders": ["male", "female"],
+        "jobStatus": ["all"],
+        "minIncome": 0,
+        "maxIncome": 600000,
+        "states": ["all"]
+      },
+      "description": "Free liquified petroleum gas connection for poor women",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://ujjwalayojana.gov.in"
+    },
+    {
+      "id": 6,
+      "name": "Pradhan Mantri Awas Yojana",
+      "category": "Housing",
+      "provider": "Ministry of Housing and Urban Affairs",
+      "benefitAmount": "Up to ₹20 lakhs for house construction",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 70,
+        "genders": ["male", "female"],
+        "jobStatus": ["unemployed", "self-employed", "employed"],
+        "minIncome": 0,
+        "maxIncome": 500000,
+        "states": ["all"]
+      },
+      "description": "Affordable housing for lower income groups",
+      "applicationDeadline": "31st December 2025",
+      "applyLink": "https://pmaymis.gov.in"
+    },
+    {
+      "id": 7,
+      "name": "National Old Age Pension Scheme",
+      "category": "Senior Citizen",
+      "provider": "Ministry of Social Justice",
+      "benefitAmount": "₹500-1000 per month",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": 100,
+        "genders": ["male", "female"],
+        "jobStatus": ["unemployed", "retired"],
+        "minIncome": 0,
+        "maxIncome": 300000,
+        "states": ["all"]
+      },
+      "description": "Monthly pension for senior citizens below poverty line",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://nsap.nic.in"
+    },
+    {
+      "id": 8,
+      "name": "Skill India Mission",
+      "category": "Skill Development",
+      "provider": "Ministry of Skill Development",
+      "benefitAmount": "Free skill training and certification",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 45,
+        "genders": ["male", "female"],
+        "jobStatus": ["unemployed", "student"],
+        "minIncome": 0,
+        "maxIncome": 500000,
+        "states": ["all"]
+      },
+      "description": "Free vocational training to develop skilled workforce",
+      "applicationDeadline": "Ongoing",
+      "applyLink": "https://www.skillindia.gov.in"
+    }
   ]
-  
-
-  
 }

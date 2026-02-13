@@ -77,13 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Submit form
     function submitForm() {
         const formData = {
-            age: document.getElementById('age').value,
+            age: parseInt(document.getElementById('age').value),
             qualification: document.getElementById('qualification').value,
             experience: document.getElementById('experience').value,
-            skills: document.getElementById('skills').value,
             location: document.getElementById('location').value,
-            workType: document.getElementById('workType').value,
-            salary: document.getElementById('salary').value
+            workType: document.getElementById('workType').value
         };
         
         console.log('Form Data:', formData);
@@ -93,109 +91,182 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
         submitBtn.textContent = 'Finding Jobs...';
         
-        // Simulate API call
-        setTimeout(() => {
-            submitBtn.classList.remove('loading');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = `
-                <svg class="search-icon-submit" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <circle cx="11" cy="11" r="8" stroke-width="2"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
-                </svg>
-                Find Jobs
-            `;
-            
-            showSuccessMessage(formData);
-        }, 2000);
+        // Fetch and filter jobs
+        fetchAndDisplayJobs(formData);
     }
     
-    // Show success message
-    function showSuccessMessage(data) {
-        const overlay = document.createElement('div');
-        overlay.style.cssText = `
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            animation: fadeIn 0.3s ease;
-        `;
+    // Fetch jobs from JSON and display results
+    function fetchAndDisplayJobs(formData) {
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Filter jobs based on form data
+                const matchedJobs = filterJobs(data.jobs, formData);
+                
+                // Reset button state
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `
+                    <svg class="search-icon-submit" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    Find Jobs
+                `;
+                
+                // Display results
+                displayJobResults(matchedJobs);
+            })
+            .catch(error => {
+                console.error('Error fetching jobs:', error);
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+                alert('Error fetching jobs. Please try again.');
+            });
+    }
+    
+    // Filter jobs based on user eligibility
+    function filterJobs(jobs, formData) {
+        return jobs.filter(job => {
+            const eligibility = job.eligibility;
+            
+            // Check age
+            if (formData.age < eligibility.minAge || formData.age > eligibility.maxAge) {
+                return false;
+            }
+            
+            // Check qualification
+            if (!eligibility.qualifications.includes(formData.qualification)) {
+                return false;
+            }
+            
+            // Check experience
+            const expMap = { 'fresher': 0, '0-1': 0.5, '1-2': 1.5, '2-3': 2.5, '3-5': 4, '5-7': 6, '7-10': 8.5, '10+': 10 };
+            const userExp = expMap[formData.experience] || 0;
+            if (userExp < eligibility.minExperience || userExp > eligibility.maxExperience) {
+                return false;
+            }
+            
+            // Check job type
+            if (formData.workType && job.jobType !== formData.workType) {
+                return false;
+            }
+            
+            return true;
+        });
+    }
+    
+    // Display job results
+    function displayJobResults(jobs) {
+        const resultsSection = document.getElementById('results');
+        const jobsContainer = document.getElementById('jobsContainer');
+        const resultsCount = document.getElementById('resultsCount');
         
-        const modal = document.createElement('div');
-        modal.style.cssText = `
-            background: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            max-width: 500px;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            animation: slideUp 0.3s ease;
-        `;
+        // Clear previous results
+        jobsContainer.innerHTML = '';
         
-        modal.innerHTML = `
-            <div style="font-size: 4rem; margin-bottom: 1rem;">✅</div>
-            <h2 style="font-size: 1.75rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem;">
-                Form Submitted Successfully!
-            </h2>
-            <p style="color: #6b7280; margin-bottom: 1.5rem;">
-                We're finding jobs that match your profile...
-            </p>
-            <div style="background: #f3e8ff; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-                <p style="color: #6b21a8; font-weight: 600;">
-                    Found <span style="color: #a855f7; font-size: 1.5rem;">42</span> jobs for you!
+        if (jobs.length === 0) {
+            resultsSection.style.display = 'block';
+            resultsCount.textContent = 'No jobs found matching your criteria.';
+            jobsContainer.innerHTML = `
+                <div style="text-align: center; padding: 2rem; color: #6b7280;">
+                    <p style="font-size: 4rem; margin-bottom: 1rem;">😔</p>
+                    <p>Try adjusting your criteria and search again.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        resultsSection.style.display = 'block';
+        resultsCount.textContent = `Found ${jobs.length} job${jobs.length !== 1 ? 's' : ''} for you`;
+        
+        // Display each job
+        jobs.forEach((job, index) => {
+            const jobCard = document.createElement('div');
+            jobCard.className = 'job-card';
+            jobCard.style.cssText = `
+                background: white;
+                border: 1px solid #e5e7eb;
+                border-radius: 0.75rem;
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+                animation: slideInUp 0.4s ease;
+                animation-delay: ${index * 0.1}s;
+            `;
+            
+            jobCard.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">
+                            ${job.name}
+                        </h3>
+                        <p style="color: #6b7280; font-weight: 500;">
+                            ${job.company} • ${job.location}
+                        </p>
+                    </div>
+                    <span style="background: #f3e8ff; color: #6b21a8; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.875rem;">
+                        ${job.jobType}
+                    </span>
+                </div>
+                
+                <p style="color: #374151; margin-bottom: 1rem; line-height: 1.6;">
+                    ${job.description}
                 </p>
-            </div>
-            <button 
-                onclick="this.parentElement.parentElement.remove()" 
-                style="
+                
+                <div style="background: #f8f4ff; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                    <p style="color: #581c87; font-size: 0.875rem; margin-bottom: 0.5rem;">
+                        <strong>Salary:</strong> ${job.salary}
+                    </p>
+                    <p style="color: #581c87; font-size: 0.875rem;">
+                        <strong>Application Deadline:</strong> ${job.applicationDeadline}
+                    </p>
+                </div>
+                
+                <a href="${job.applyLink}" target="_blank" style="
+                    display: inline-block;
                     background: #a855f7;
                     color: white;
-                    padding: 0.75rem 2rem;
-                    border: none;
+                    padding: 0.75rem 1.5rem;
                     border-radius: 0.5rem;
+                    text-decoration: none;
                     font-weight: 600;
-                    cursor: pointer;
-                    transition: all 0.2s;
+                    transition: background 0.2s;
                 "
                 onmouseover="this.style.background='#9333ea'"
                 onmouseout="this.style.background='#a855f7'"
-            >
-                View Jobs
-            </button>
-        `;
+                >
+                    Apply Now →
+                </a>
+            `;
+            
+            jobsContainer.appendChild(jobCard);
+        });
         
-        overlay.appendChild(modal);
-        document.body.appendChild(overlay);
-        
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
-            @keyframes slideUp {
-                from { 
-                    opacity: 0;
-                    transform: translateY(30px);
+        // Add animations
+        if (!document.querySelector('style[data-animations]')) {
+            const style = document.createElement('style');
+            style.setAttribute('data-animations', 'true');
+            style.textContent = `
+                @keyframes slideInUp {
+                    from { 
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
                 }
-                to { 
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        `;
-        document.head.appendChild(style);
+            `;
+            document.head.appendChild(style);
+        }
         
-        localStorage.setItem('jobsFormData', JSON.stringify(data));
-        
+        // Scroll to results
         setTimeout(() => {
-            overlay.remove();
-        }, 3000);
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }, 100);
     }
     
     // Auto-save
