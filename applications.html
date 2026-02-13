@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications - Opportunity Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="applications.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Opportunity Finder</span>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-signup">Sign Up</button>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <button class="btn-back" onclick="window.location.href='index.html'">
+                <svg class="back-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </button>
+        </div>
+
+        <!-- Title Section -->
+        <div class="form-title-section">
+            <div class="form-icon">📄</div>
+            <h1 class="form-title">Find Applications</h1>
+            <p class="form-subtitle">Discover college, internship & fellowship opportunities</p>
+        </div>
+
+        <!-- Applications Form -->
+        <div class="form-container">
+            <form id="applicationsForm" class="applications-form">
+                <!-- Application Type -->
+                <div class="form-group full-width">
+                    <label for="applicationType" class="form-label">
+                        Application Type <span class="required">*</span>
+                    </label>
+                    <select id="applicationType" name="applicationType" class="form-select" required>
+                        <option value="">Select Application Type</option>
+                        <option value="college">College Admission</option>
+                        <option value="internship">Internship</option>
+                        <option value="fellowship">Fellowship</option>
+                    </select>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age" class="form-label">
+                        Age <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="number" 
+                        id="age" 
+                        name="age" 
+                        class="form-input" 
+                        placeholder="Enter your age"
+                        min="15"
+                        max="50"
+                        required
+                    >
+                </div>
+
+                <!-- Current Qualification -->
+                <div class="form-group">
+                    <label for="qualification" class="form-label">
+                        Current Qualification <span class="required">*</span>
+                    </label>
+                    <select id="qualification" name="qualification" class="form-select" required>
+                        <option value="">Select Qualification</option>
+                        <option value="10th">10th Standard</option>
+                        <option value="12th">12th Standard</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="undergraduate">Undergraduate (Pursuing)</option>
+                        <option value="bachelor">Bachelor's Degree (Completed)</option>
+                        <option value="postgraduate">Postgraduate (Pursuing)</option>
+                        <option value="master">Master's Degree (Completed)</option>
+                        <option value="doctorate">Doctorate (PhD)</option>
+                    </select>
+                </div>
+
+                <!-- Field of Study -->
+                <div class="form-group">
+                    <label for="field" class="form-label">
+                        Field of Study/Interest <span class="required">*</span>
+                    </label>
+                    <select id="field" name="field" class="form-select" required>
+                        <option value="">Select Field</option>
+                        <optgroup label="Engineering & Technology">
+                            <option value="computer-science">Computer Science/IT</option>
+                            <option value="mechanical">Mechanical Engineering</option>
+                            <option value="electrical">Electrical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="electronics">Electronics & Communication</option>
+                            <option value="chemical">Chemical Engineering</option>
+                        </optgroup>
+                        <optgroup label="Medical & Healthcare">
+                            <option value="medicine">Medicine (MBBS/MD)</option>
+                            <option value="nursing">Nursing</option>
+                            <option value="pharmacy">Pharmacy</option>
+                            <option value="dental">Dental</option>
+                            <option value="physiotherapy">Physiotherapy</option>
+                        </optgroup>
+                        <optgroup label="Business & Management">
+                            <option value="management">Management/MBA</option>
+                            <option value="finance">Finance & Accounting</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="hr">Human Resources</option>
+                        </optgroup>
+                        <optgroup label="Science">
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="biology">Biology</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="environmental">Environmental Science</option>
+                        </optgroup>
+                        <optgroup label="Arts & Humanities">
+                            <option value="literature">Literature/English</option>
+                            <option value="history">History</option>
+                            <option value="psychology">Psychology</option>
+                            <option value="sociology">Sociology</option>
+                            <option value="journalism">Journalism</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="law">Law</option>
+                            <option value="architecture">Architecture</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="design">Design</option>
+                            <option value="education">Education</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!-- State -->
+                <div class="form-group">
+                    <label for="state" class="form-label">
+                        Preferred State <span class="required">*</span>
+                    </label>
+                    <select id="state" name="state" class="form-select" required>
+                        <option value="">Select State</option>
+                        <option value="andhra-pradesh">Andhra Pradesh</option>
+                        <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal-pradesh">Himachal Pradesh</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="madhya-pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil-nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar-pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west-bengal">West Bengal</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="any">Any State</option>
+                    </select>
+                </div>
+
+                <!-- Category -->
+                <div class="form-group">
+                    <label for="category" class="form-label">
+                        Category <span class="required">*</span>
+                    </label>
+                    <select id="category" name="category" class="form-select" required>
+                        <option value="">Select Category</option>
+                        <option value="general">General</option>
+                        <option value="obc">OBC (Other Backward Classes)</option>
+                        <option value="sc">SC (Scheduled Caste)</option>
+                        <option value="st">ST (Scheduled Tribe)</option>
+                        <option value="ews">EWS (Economically Weaker Section)</option>
+                    </select>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender" class="form-label">
+                        Gender <span class="required">*</span>
+                    </label>
+                    <select id="gender" name="gender" class="form-select" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-submit-section">
+                    <button type="submit" class="btn-submit">
+                        <svg class="search-icon-submit" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                        </svg>
+                        Find Applications
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Opportunity Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="applications.js"></script>
+</body>
+</html>

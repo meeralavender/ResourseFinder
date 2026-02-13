@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Opportunity Finder</span>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-signup">Sign Up</button>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Title Section -->
+        <div class="title-section">
+            <h1 class="main-title">What Are You Looking For?</h1>
+            <p class="subtitle">Select the type of resource you want to explore.</p>
+        </div>
+
+        <!-- Category Cards Grid -->
+        <div class="categories-container">
+            <!-- First Row -->
+            <div class="categories-grid">
+                <!-- Scholarships Card -->
+                <div class="category-card" data-category="scholarships">
+                    <div class="card-header bg-blue">
+                        <div class="card-header-content">
+                            <span class="card-icon">🎓</span>
+                            <h3 class="card-title">Scholarships</h3>
+                        </div>
+                        <div class="card-wave"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Find educational scholarships.</p>
+                    </div>
+                </div>
+
+                <!-- Government Schemes Card -->
+                <div class="category-card" data-category="government">
+                    <div class="card-header bg-green">
+                        <div class="card-header-content">
+                            <span class="card-icon">🏛️</span>
+                            <h3 class="card-title">Government Schemes</h3>
+                        </div>
+                        <div class="card-wave"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Explore welfare & subsidy programs.</p>
+                    </div>
+                </div>
+
+                <!-- Entrance Exams Card -->
+                <div class="category-card" data-category="exams">
+                    <div class="card-header bg-orange">
+                        <div class="card-header-content">
+                            <span class="card-icon">📋</span>
+                            <h3 class="card-title">Entrance Exams</h3>
+                        </div>
+                        <div class="card-wave"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Check exams & test dates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="categories-grid-two">
+                <!-- Jobs & Recruitment Card -->
+                <div class="category-card" data-category="jobs">
+                    <div class="card-header bg-purple">
+                        <div class="card-header-content">
+                            <span class="card-icon">💼</span>
+                            <h3 class="card-title">Jobs & Recruitment</h3>
+                        </div>
+                        <div class="card-wave"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">Discover job & recruitment openings.</p>
+                    </div>
+                </div>
+
+                <!-- Applications Card -->
+                <div class="category-card" data-category="applications">
+                    <div class="card-header bg-cyan">
+                        <div class="card-header-content">
+                            <span class="card-icon">📄</span>
+                            <h3 class="card-title">Applications</h3>
+                        </div>
+                        <div class="card-wave"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">College, Internship & Fellowships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Show All Button -->
+        <div class="show-all-section">
+            <button class="btn-show-all">
+                <svg class="search-icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                </svg>
+                <div class="btn-text-content">
+                    <div class="btn-main-text">Show Me All Opportunities</div>
+                    <div class="btn-sub-text">Browse everything I'm eligible for</div>
+                </div>
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

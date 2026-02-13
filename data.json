@@ -1,0 +1,338 @@
+{
+  "scholarships": [
+    {
+      "id": 1,
+      "name": "National Merit Scholarship for SC/ST Students",
+      "provider": "Ministry of Social Justice and Empowerment",
+      "amount": "₹50,000 per year",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": 30,
+        "categories": ["sc", "st"],
+        "minIncome": 0,
+        "maxIncome": 250000,
+        "qualifications": ["10th", "12th", "undergraduate", "postgraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Financial assistance for SC/ST students pursuing higher education",
+      "deadline": "31st March 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 2,
+      "name": "Post Matric Scholarship for OBC Students",
+      "provider": "Ministry of Social Justice",
+      "amount": "₹30,000 per year",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 35,
+        "categories": ["obc"],
+        "minIncome": 0,
+        "maxIncome": 200000,
+        "qualifications": ["12th", "undergraduate", "postgraduate", "phd"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Scholarship for OBC students for post-matriculation studies",
+      "deadline": "30th April 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 3,
+      "name": "Minority Community Scholarship",
+      "provider": "Ministry of Minority Affairs",
+      "amount": "₹40,000 per year",
+      "eligibility": {
+        "minAge": 12,
+        "maxAge": 30,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 200000,
+        "qualifications": ["10th", "12th", "undergraduate", "postgraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": ["muslim", "christian", "sikh", "buddhist", "jain", "parsi"]
+      },
+      "description": "Financial support for students from minority communities",
+      "deadline": "15th May 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 4,
+      "name": "National Scholarship for Persons with Disabilities",
+      "provider": "Department of Empowerment of Persons with Disabilities",
+      "amount": "₹60,000 per year",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": 40,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 500000,
+        "qualifications": ["10th", "12th", "undergraduate", "postgraduate", "phd"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "yes",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Special scholarship for students with disabilities",
+      "deadline": "31st May 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 5,
+      "name": "Single Girl Child Scholarship",
+      "provider": "CBSE",
+      "amount": "₹25,000 per year",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 25,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 800000,
+        "qualifications": ["12th", "undergraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "yes",
+        "minority": "any"
+      },
+      "description": "Scholarship for single girl child pursuing higher education",
+      "deadline": "30th June 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 6,
+      "name": "BPL Family Education Scholarship",
+      "provider": "State Government",
+      "amount": "₹35,000 per year",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": 30,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 100000,
+        "qualifications": ["10th", "12th", "undergraduate", "postgraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Financial assistance for students from BPL families",
+      "deadline": "31st July 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 7,
+      "name": "Gujarat State Merit Scholarship",
+      "provider": "Gujarat Education Department",
+      "amount": "₹45,000 per year",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 25,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 400000,
+        "qualifications": ["12th", "undergraduate", "postgraduate"],
+        "states": ["gujarat"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Merit-based scholarship for Gujarat state students",
+      "deadline": "15th August 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 8,
+      "name": "Dr. Ambedkar Post-Matric Scholarship for EWS",
+      "provider": "Ministry of Social Justice",
+      "amount": "₹38,000 per year",
+      "eligibility": {
+        "minAge": 16,
+        "maxAge": 30,
+        "categories": ["ews"],
+        "minIncome": 0,
+        "maxIncome": 100000,
+        "qualifications": ["12th", "undergraduate", "postgraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Scholarship for economically weaker section students",
+      "deadline": "30th September 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 9,
+      "name": "National Means Cum Merit Scholarship",
+      "provider": "Department of School Education",
+      "amount": "₹12,000 per year",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": 18,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 150000,
+        "qualifications": ["10th", "12th"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Merit-based scholarship for class 10-12 students",
+      "deadline": "31st October 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 10,
+      "name": "Prime Minister's Special Scholarship Scheme",
+      "provider": "Ministry of Home Affairs",
+      "amount": "₹55,000 per year",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 600000,
+        "qualifications": ["undergraduate", "postgraduate", "phd"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Special scholarship for higher education students",
+      "deadline": "30th November 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 11,
+      "name": "Women Empowerment Scholarship",
+      "provider": "Ministry of Women & Child Development",
+      "amount": "₹42,000 per year",
+      "eligibility": {
+        "minAge": 17,
+        "maxAge": 35,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 300000,
+        "qualifications": ["12th", "undergraduate", "postgraduate", "phd"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any",
+        "gender": "female"
+      },
+      "description": "Scholarship exclusively for female students",
+      "deadline": "31st December 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 12,
+      "name": "State Minority Muslim Scholarship",
+      "provider": "State Minority Welfare Department",
+      "amount": "₹33,000 per year",
+      "eligibility": {
+        "minAge": 14,
+        "maxAge": 28,
+        "categories": ["general", "obc"],
+        "minIncome": 0,
+        "maxIncome": 250000,
+        "qualifications": ["10th", "12th", "undergraduate", "postgraduate"],
+        "states": ["gujarat", "maharashtra", "karnataka", "kerala", "tamil-nadu"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": ["muslim"]
+      },
+      "description": "Financial assistance for Muslim minority students",
+      "deadline": "28th February 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 13,
+      "name": "Central Sector Scholarship Scheme",
+      "provider": "Department of Higher Education",
+      "amount": "₹20,000 per year",
+      "eligibility": {
+        "minAge": 17,
+        "maxAge": 23,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 450000,
+        "qualifications": ["undergraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Central government scholarship for college students",
+      "deadline": "31st January 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 14,
+      "name": "Technical Education Scholarship",
+      "provider": "AICTE",
+      "amount": "₹48,000 per year",
+      "eligibility": {
+        "minAge": 17,
+        "maxAge": 26,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 350000,
+        "qualifications": ["undergraduate", "postgraduate"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Scholarship for engineering and technical students",
+      "deadline": "15th March 2025",
+      "applicationLink": "https://example.com/apply"
+    },
+    {
+      "id": 15,
+      "name": "Research Fellowship for PhD Students",
+      "provider": "UGC",
+      "amount": "₹75,000 per year",
+      "eligibility": {
+        "minAge": 22,
+        "maxAge": 35,
+        "categories": ["general", "obc", "sc", "st", "ews"],
+        "minIncome": 0,
+        "maxIncome": 1000000,
+        "qualifications": ["phd"],
+        "states": ["all"],
+        "economicStatus": ["bpl", "apl"],
+        "disability": "any",
+        "singleChild": "any",
+        "minority": "any"
+      },
+      "description": "Fellowship for doctoral research students",
+      "deadline": "30th April 2025",
+      "applicationLink": "https://example.com/apply"
+    }
+  ]
+  
+
+  
+}

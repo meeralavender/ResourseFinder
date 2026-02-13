@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Exams - Opportunity Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exams.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Opportunity Finder</span>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-signup">Sign Up</button>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <button class="btn-back" onclick="window.location.href='index.html'">
+                <svg class="back-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </button>
+        </div>
+
+        <!-- Title Section -->
+        <div class="form-title-section">
+            <div class="form-icon">📋</div>
+            <h1 class="form-title">Find Entrance Exams</h1>
+            <p class="form-subtitle">Check exams & test dates you're eligible for</p>
+        </div>
+
+        <!-- Entrance Exams Form -->
+        <div class="form-container">
+            <form id="examsForm" class="exams-form">
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age" class="form-label">
+                        Age <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="number" 
+                        id="age" 
+                        name="age" 
+                        class="form-input" 
+                        placeholder="Enter your age"
+                        min="15"
+                        max="50"
+                        required
+                    >
+                </div>
+
+                <!-- Course Studied -->
+                <div class="form-group">
+                    <label for="course" class="form-label">
+                        Course Studied <span class="required">*</span>
+                    </label>
+                    <select id="course" name="course" class="form-select" required>
+                        <option value="">Select Course</option>
+                        <option value="10th">10th Standard</option>
+                        <option value="12th">12th Standard</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="doctorate">Doctorate (PhD)</option>
+                    </select>
+                </div>
+
+                <!-- Passing Year -->
+                <div class="form-group">
+                    <label for="passingYear" class="form-label">
+                        Passing Year <span class="required">*</span>
+                    </label>
+                    <select id="passingYear" name="passingYear" class="form-select" required>
+                        <option value="">Select Year</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="before-2015">Before 2015</option>
+                    </select>
+                </div>
+
+                <!-- Stream -->
+                <div class="form-group">
+                    <label for="stream" class="form-label">
+                        Stream/Specialization <span class="required">*</span>
+                    </label>
+                    <select id="stream" name="stream" class="form-select" required>
+                        <option value="">Select Stream</option>
+                        <optgroup label="12th Standard">
+                            <option value="science-pcm">Science (PCM - Physics, Chemistry, Math)</option>
+                            <option value="science-pcb">Science (PCB - Physics, Chemistry, Biology)</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="arts">Arts/Humanities</option>
+                        </optgroup>
+                        <optgroup label="Undergraduate">
+                            <option value="engineering">Engineering/Technology</option>
+                            <option value="medical">Medical/MBBS</option>
+                            <option value="pharmacy">Pharmacy</option>
+                            <option value="nursing">Nursing</option>
+                            <option value="bca">BCA/Computer Applications</option>
+                            <option value="bba">BBA/Business Administration</option>
+                            <option value="bcom">B.Com/Commerce</option>
+                            <option value="ba">BA/Arts</option>
+                            <option value="bsc">B.Sc/Science</option>
+                            <option value="law">Law/LLB</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="architecture">Architecture</option>
+                        </optgroup>
+                        <optgroup label="Postgraduate">
+                            <option value="mba">MBA/Management</option>
+                            <option value="mca">MCA</option>
+                            <option value="mtech">M.Tech/ME</option>
+                            <option value="msc">M.Sc</option>
+                            <option value="ma">MA</option>
+                            <option value="mcom">M.Com</option>
+                            <option value="llm">LLM</option>
+                            <option value="md-ms">MD/MS (Medical)</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-submit-section">
+                    <button type="submit" class="btn-submit">
+                        <svg class="search-icon-submit" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                        </svg>
+                        Find Entrance Exams
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Opportunity Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="exams.js"></script>
+</body>
+</html>
