@@ -478,11 +478,11 @@
       "jobType": "Full-time",
       "location": "Bangalore",
       "salary": "₹6,00,000 - ₹10,00,000 per annum",
+      "skills": ["programming", "java", "python", "sql"],
       "eligibility": {
         "minAge": 21,
         "maxAge": 35,
-        "qualifications": ["bachelor", "master"],
-        "experience": ["fresher", "0-1", "1-2", "2-3"],
+        "qualifications": ["bachelor", "master", "diploma"],
         "minExperience": 0,
         "maxExperience": 3
       },
@@ -498,11 +498,11 @@
       "jobType": "Full-time",
       "location": "Mumbai",
       "salary": "₹5,00,000 - ₹8,00,000 per annum",
+      "skills": ["data analysis", "sql", "python", "excel"],
       "eligibility": {
         "minAge": 22,
         "maxAge": 32,
         "qualifications": ["bachelor", "master"],
-        "experience": ["fresher", "0-1", "1-2"],
         "minExperience": 0,
         "maxExperience": 2
       },
@@ -515,14 +515,14 @@
       "id": 3,
       "name": "Senior Project Manager",
       "company": "Business Consulting Ltd",
-      "jobType": "Full-time",
-      "location": "Delhi",
-      "salary": "₹12,00,000 - ₹18,00,000 per annum",
+      "jobType": "Full-Time",
+      "location": "Delhi/NCR",
+      "salary": "₹10,00,000 - ₹15,00,000 ",
+      "skills": ["project management", "leadership", "communication"],
       "eligibility": {
         "minAge": 28,
         "maxAge": 45,
         "qualifications": ["bachelor", "master"],
-        "experience": ["5-7", "7-10", "10+"],
         "minExperience": 5,
         "maxExperience": 20
       },
@@ -538,11 +538,11 @@
       "jobType": "Part-time",
       "location": "Pune",
       "salary": "₹3,00,000 - ₹5,00,000 per annum",
+      "skills": ["graphic design", "adobe photoshop", "illustrator"],
       "eligibility": {
         "minAge": 20,
         "maxAge": 30,
         "qualifications": ["diploma", "bachelor"],
-        "experience": ["fresher", "0-1", "1-2"],
         "minExperience": 0,
         "maxExperience": 2
       },
@@ -558,11 +558,11 @@
       "jobType": "Full-time",
       "location": "Hyderabad",
       "salary": "₹7,00,000 - ₹11,00,000 per annum",
+      "skills": ["customer service", "financial analysis", "communication"],
       "eligibility": {
         "minAge": 21,
         "maxAge": 28,
         "qualifications": ["bachelor"],
-        "experience": ["fresher"],
         "minExperience": 0,
         "maxExperience": 0
       },
@@ -578,11 +578,11 @@
       "jobType": "Full-time",
       "location": "Chennai",
       "salary": "₹4,00,000 - ₹7,00,000 per annum",
+      "skills": ["communication", "negotiation", "customer service"],
       "eligibility": {
         "minAge": 20,
         "maxAge": 35,
         "qualifications": ["12th", "diploma", "bachelor"],
-        "experience": ["fresher", "0-1", "1-2", "2-3"],
         "minExperience": 0,
         "maxExperience": 3
       },
@@ -602,7 +602,6 @@
         "minAge": 22,
         "maxAge": 40,
         "qualifications": ["diploma", "bachelor"],
-        "experience": ["fresher", "0-1", "1-2", "2-3"],
         "minExperience": 0,
         "maxExperience": 3
       },
@@ -622,7 +621,6 @@
         "minAge": 24,
         "maxAge": 38,
         "qualifications": ["bachelor"],
-        "experience": ["1-2", "2-3", "3-5"],
         "minExperience": 1,
         "maxExperience": 5
       },
@@ -784,6 +782,208 @@
       "description": "Free vocational training to develop skilled workforce",
       "applicationDeadline": "Ongoing",
       "applyLink": "https://www.skillindia.gov.in"
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "name": "IIT Delhi B.Tech Computer Science",
+      "type": "college",
+      "institution": "Indian Institute of Technology Delhi",
+      "location": "delhi",
+      "field": "computer-science",
+      "eligibility": {
+        "minAge": 16,
+        "maxAge": 25,
+        "qualifications": ["12th"],
+        "fields": ["computer-science", "mathematics"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Prestigious B.Tech program in Computer Science from India's leading engineering institute",
+      "applicationDeadline": "31st March 2026",
+      "courseType": "college",
+      "applyLink": "https://jeeadv.ac.in"
+    },
+    {
+      "id": 2,
+      "name": "AIIMS Medical (MBBS)",
+      "type": "college",
+      "institution": "All India Institute of Medical Sciences",
+      "location": "delhi",
+      "field": "medicine",
+      "eligibility": {
+        "minAge": 17,
+        "maxAge": 25,
+        "qualifications": ["12th"],
+        "fields": ["medicine", "biology"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Medical degree program from India's premier medical institute",
+      "applicationDeadline": "30th April 2026",
+      "courseType": "college",
+      "applyLink": "https://neetmds.aacomas.org"
+    },
+    {
+      "id": 3,
+      "name": "Harvard University MBA Internship",
+      "type": "internship",
+      "institution": "Harvard University",
+      "location": "any",
+      "field": "management",
+      "eligibility": {
+        "minAge": 19,
+        "maxAge": 28,
+        "qualifications": ["bachelor", "postgraduate"],
+        "fields": ["management", "finance", "marketing"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Summer internship opportunity at Harvard University - Management & Strategy division",
+      "applicationDeadline": "28th February 2026",
+      "courseType": "internship",
+      "applyLink": "https://www.hbs.edu"
+    },
+    {
+      "id": 4,
+      "name": "Google Engineering Internship",
+      "type": "internship",
+      "institution": "Google",
+      "location": "any",
+      "field": "computer-science",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 26,
+        "qualifications": ["undergraduate", "bachelor"],
+        "fields": ["computer-science", "electronics", "mathematics"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Internship in software engineering at Google offices worldwide",
+      "applicationDeadline": "31st January 2026",
+      "courseType": "internship",
+      "applyLink": "https://www.google.com/careers"
+    },
+    {
+      "id": 5,
+      "name": "Fulbright Fellowship for Higher Education",
+      "type": "fellowship",
+      "institution": "US State Department",
+      "location": "any",
+      "field": "other",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 40,
+        "qualifications": ["bachelor", "postgraduate"],
+        "fields": ["all"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Prestigious fellowship to pursue postgraduate studies in the United States",
+      "applicationDeadline": "15th March 2026",
+      "courseType": "fellowship",
+      "applyLink": "https://www.fulbright.org.in"
+    },
+    {
+      "id": 6,
+      "name": "Microsoft Research Fellowship",
+      "type": "fellowship",
+      "institution": "Microsoft Research",
+      "location": "any",
+      "field": "computer-science",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 35,
+        "qualifications": ["postgraduate", "doctorate"],
+        "fields": ["computer-science", "electronics", "mathematics"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Research fellowship supporting advanced research in computer science and AI",
+      "applicationDeadline": "30th April 2026",
+      "courseType": "fellowship",
+      "applyLink": "https://www.microsoft.com/en-us/research"
+    },
+    {
+      "id": 7,
+      "name": "Delhi University B.A. Honors",
+      "type": "college",
+      "institution": "Delhi University",
+      "location": "delhi",
+      "field": "literature",
+      "eligibility": {
+        "minAge": 16,
+        "maxAge": 24,
+        "qualifications": ["12th"],
+        "fields": ["literature", "history", "psychology", "sociology", "journalism"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Bachelor of Arts (Honors) in English Literature from Delhi University",
+      "applicationDeadline": "30th June 2026",
+      "courseType": "college",
+      "applyLink": "https://www.du.ac.in"
+    },
+    {
+      "id": 8,
+      "name": "NIT Rourkee B.Tech Engineering",
+      "type": "college",
+      "institution": "National Institute of Technology Rourkee",
+      "location": "uttarakhand",
+      "field": "mechanical",
+      "eligibility": {
+        "minAge": 16,
+        "maxAge": 25,
+        "qualifications": ["12th"],
+        "fields": ["mechanical", "electrical", "civil", "chemical", "computer-science"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Four-year B.Tech program in Mechanical Engineering from NIT Rourkee",
+      "applicationDeadline": "31st May 2026",
+      "courseType": "college",
+      "applyLink": "https://www.nit.ac.in"
+    },
+    {
+      "id": 9,
+      "name": "TCS Internship Program",
+      "type": "internship",
+      "institution": "Tata Consultancy Services",
+      "location": "any",
+      "field": "computer-science",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 27,
+        "qualifications": ["undergraduate", "bachelor"],
+        "fields": ["computer-science", "electronics", "mathematics"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "6-month internship in IT consulting and software development at TCS",
+      "applicationDeadline": "28th February 2026",
+      "courseType": "internship",
+      "applyLink": "https://www.tcs.com/careers"
+    },
+    {
+      "id": 10,
+      "name": "Commonwealth Scholarship",
+      "type": "fellowship",
+      "institution": "British Council",
+      "location": "any",
+      "field": "other",
+      "eligibility": {
+        "minAge": 22,
+        "maxAge": 38,
+        "qualifications": ["bachelor", "postgraduate"],
+        "fields": ["all"],
+        "states": ["all"],
+        "categories": ["general", "obc", "sc", "st", "ews"]
+      },
+      "description": "Scholarship for postgraduate studies in Commonwealth universities",
+      "applicationDeadline": "31st March 2026",
+      "courseType": "fellowship",
+      "applyLink": "https://www.britishcouncil.in"
     }
   ]
 }

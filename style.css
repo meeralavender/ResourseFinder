@@ -33,13 +33,14 @@ body {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #2563eb;
-    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.12);
 }
 
 .search-icon {
@@ -49,9 +50,23 @@ body {
 }
 
 .logo-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1f2937;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: 0.8px;
+    /* subtle vibrant gradient fill */
+    background: linear-gradient(90deg, #06b6d4 0%, #2563eb 50%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 6px 18px rgba(37, 99, 235, 0.06);
+    transition: transform 150ms ease, text-shadow 150ms ease;
+    display: inline-block;
+    transform-origin: left center;
+}
+
+.logo-text:hover {
+    transform: scale(1.04);
+    text-shadow: 0 10px 24px rgba(37, 99, 235, 0.12);
 }
 
 .auth-buttons {

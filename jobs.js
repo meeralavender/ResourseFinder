@@ -135,20 +135,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 return false;
             }
             
-            // Check qualification
-            if (!eligibility.qualifications.includes(formData.qualification)) {
+            // Check qualification - allow any matching qualification
+            if (eligibility.qualifications && !eligibility.qualifications.includes(formData.qualification)) {
                 return false;
             }
             
-            // Check experience
+            // Check experience - convert form experience to numeric value
             const expMap = { 'fresher': 0, '0-1': 0.5, '1-2': 1.5, '2-3': 2.5, '3-5': 4, '5-7': 6, '7-10': 8.5, '10+': 10 };
             const userExp = expMap[formData.experience] || 0;
             if (userExp < eligibility.minExperience || userExp > eligibility.maxExperience) {
-                return false;
-            }
-            
-            // Check job type
-            if (formData.workType && job.jobType !== formData.workType) {
                 return false;
             }
             
