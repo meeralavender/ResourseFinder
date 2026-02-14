@@ -2,27 +2,28 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [AmIEligible] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [UpsideDown]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Cilla Elsa Binoy] - [Government Engineering College Thrissur]
+- Member 2: [Meera Nandita S] - [Government Engineering College Thrissur]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[AmIEligible is a user-friendly platform that helps individuals discover government schemes, scholarships, jobs, and exams they are eligible for in under 60 seconds. By collecting basic details through an interactive step-by-step process, it filters and displays personalized opportunities instantly. The goal is to ensure no one misses out on important opportunities due to lack of awareness.
+]
 
 ### The Problem statement
-[What problem are you solving?]
+[Many people miss out on valuable opportunities like government schemes, scholarships, jobs, and competitive exams simply because information is scattered across multiple websites and is often difficult to understand. This lack of awareness especially affects students, women, and economically weaker sections, leading to underutilization of benefits that are meant to support them]
 
 ### The Solution
-[How are you solving it?]
+[The platform solves this by bringing all relevant opportunities into a single, easy-to-use website. Users enter basic details such as income, category (student, farmer, etc.), and location, and the system filters and displays only the opportunities they are eligible for. This personalized approach makes information accessible, saves time, and ensures users can easily find and apply for the benefits they deserve.]
 
 ---
 
@@ -31,10 +32,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [Htmll,css,javascript]
+- Frameworks used: [None]
+- Libraries used: [None]
+- Tools used: [VS Code,Live server Git]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +47,14 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [Smart Eligibility Checker
+Users answer a few simple step-by-step questions (income, category, state, etc.), and the system instantly filters and shows schemes, scholarships, exams, and jobs they are eligible for]
+- Feature 2: [Unified Opportunity Hub
+Combines government schemes, scholarships, job openings, and exams into one platform, so users don’t have to search across multiple websites.]
+- Feature 3: [Simple & Interactive User Interface
+Clean, beginner-friendly design with guided inputs, progress indicators, and instant results to make discovery fast and stress-free.]
+- Feature 4: [Lightweight JSON-Based Data System
+Uses a structured JSON database for fast filtering and easy updates without needing a complex backend.]
 
 ---
 
