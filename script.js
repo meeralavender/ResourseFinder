@@ -107,6 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Optional: ensure Get Started button focuses the categories container after scroll
+    const getStarted = document.querySelector('.btn-get-started');
+    if(getStarted){
+        getStarted.addEventListener('click', function(){
+            const el = document.getElementById('main-categories');
+            if(el){ setTimeout(()=> el.setAttribute('tabindex','-1'), 400); }
+        });
+    }
     
     // Track analytics (placeholder function)
     function trackEvent(eventName, eventData) {

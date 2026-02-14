@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Top announcement marquee -->
+    <div class="top-marquee" role="status" aria-live="polite">
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                🔔 New: Over 200 opportunities added — check "Show Me All Opportunities" &nbsp;&nbsp; • &nbsp;&nbsp; Apply now for the latest scholarships, jobs, exams and fellowships! &nbsp;&nbsp; • &nbsp;&nbsp; Deadline approaching for PM Scholarship — apply by 31st March 2026.
+            </div>
+        </div>
+    </div>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
@@ -20,14 +28,28 @@
                 <span class="logo-text">AmIEligible</span>
             </div>
             <div class="auth-buttons">
-                <button class="btn-signup">Sign Up</button>
-                <button class="btn-login">Login</button>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+                <a href="login.html" class="btn-login">Login</a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Hero Intro -->
+        <section class="hero-section">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h2 class="hero-title">Not sure which opportunity fits you?</h2>
+                    <p class="hero-desc">Discover scholarships, government schemes, entrance exams, jobs and applications<br> tailored to your profile. Get matched quickly start by telling us a little about yourself.</p>
+                    <a href="#main-categories" class="btn-get-started">Get Started</a>
+                </div>
+                <div class="hero-illustration" aria-hidden="true">
+                    <img src="assets/confused.png" alt="Confused person" class="hero-illustration-img">
+                </div>
+                <!-- illustration removed as requested -->
+            </div>
+        </section>
         <!-- Title Section -->
         <div class="title-section">
             <h1 class="main-title">What Are You Looking For?</h1>
@@ -35,7 +57,7 @@
         </div>
 
         <!-- Category Cards Grid -->
-        <div class="categories-container">
+        <div id="main-categories" class="categories-container">
             <!-- First Row -->
             <div class="categories-grid">
                 <!-- Scholarships Card -->
@@ -113,21 +135,10 @@
             </div>
         </div>
 
-        <!-- Show All Button -->
-        <div class="show-all-section">
-            <button class="btn-show-all">
-                <svg class="search-icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <circle cx="11" cy="11" r="8" stroke-width="2"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
-                </svg>
-                <div class="btn-text-content">
-                    <div class="btn-main-text">Show Me All Opportunities</div>
-                    <div class="btn-sub-text">Browse everything I'm eligible for</div>
-                </div>
-            </button>
-        </div>
+        
     </main>
 
     <script src="script.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>

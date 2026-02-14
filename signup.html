@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up — AmIEligible</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <div class="logo-icon">
+          <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" stroke-width="2"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+          </svg>
+        </div>
+        <a href="index.html" class="logo-text">AmIEligible</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="title-section" style="margin-top:2rem;">
+      <h1 class="main-title">Create your account</h1>
+      <p class="subtitle">Sign up to save opportunities and manage your profile.</p>
+    </div>
+
+    <form id="signupForm" class="auth-form" style="max-width:520px;margin:0 auto;background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 24px rgba(15,23,42,0.06);">
+      <label for="name">Full name</label>
+      <input id="name" name="name" required placeholder="Jane Doe" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required placeholder="At least 8 characters" />
+
+      
+
+      <button type="submit" class="btn-login" style="margin-top:1rem;width:100%;">Create account</button>
+
+      <p style="margin-top:1rem;text-align:center;color:#6b7280;">Already have an account? <a href="login.html">Sign in</a></p>
+    </form>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
