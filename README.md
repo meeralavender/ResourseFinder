@@ -89,14 +89,24 @@ cd ResourseFinder]
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![![f3b383f7-a392-4616-b49e-69aaf571ca1f](https://github.com/user-attachments/assets/f212cc7d-acfe-40d4-8c86-3dc2e69b61f8)
+](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
+Homepage (Landing Section)
+This is the main landing page of the platform, introducing users to the concept of finding opportunities easily. It includes a clean navigation bar, a headline guiding users who are unsure about their options, and a “Get Started” button that begins the eligibility process.
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![![4dcf11c7-e00b-4a23-acff-5f32787d7818](https://github.com/user-attachments/assets/ce416f22-376e-4680-b6cf-65040d135a2f)
+](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
+Category Selection Page
+This screen allows users to choose what type of opportunities they are looking for, such as scholarships, government schemes, entrance exams, jobs, or applications. The card-based design makes it visually appealing and easy to navigate, helping users quickly select their area of interest.
 
-![Screenshot3](Add screenshot 3 here with proper name)
+
+![![2a2fa882-8244-4fd6-9d94-5fdfc5e6108a](https://github.com/user-attachments/assets/cd314674-a122-4fb5-88a6-477ff6988c87)
+](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
+Scholarship Eligibility Form Page
+This page collects user details like age, gender, state, category, income, and qualification through a structured form. Based on these inputs, the system filters and displays scholarships that the user is eligible for, making the process personalized and efficient.
 
 #### Diagrams
 
