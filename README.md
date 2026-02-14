@@ -380,19 +380,18 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, ChatGPT, Claude]
+**Tool Used:** [GitHub Copilot,ChatGPT, Claude]
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
+
 - Example: "Debugging assistance for async functions"
 - Example: "Code review and optimization suggestions"
 
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
 - "Debug this async function that's causing race conditions"
 - "Optimize this database query for better performance"
 
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** [Approximately 65%]
 
 **Human Contributions:**
 - Architecture design and planning
@@ -406,9 +405,9 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- [Cilla Elsa Binoy]: [Specific contributions - Frontend development, Documentation,UI Design]
+- [Meera Nandita S]: [Specific contributions - Backend development, Testing.UI Design]
+
 
 ---
 
