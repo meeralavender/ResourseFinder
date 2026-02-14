@@ -64,7 +64,8 @@ Uses a structured JSON database for fast filtering and easy updates without need
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[git clone https://github.com/meeralavender/ResourseFinder.git
+cd ResourseFinder]
 ```
 
 #### Run
@@ -379,7 +380,7 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** [e.g., GitHub Copilot, ChatGPT, Claude]
 
 **Purpose:** [What you used it for]
 - Example: "Generated boilerplate React components"
