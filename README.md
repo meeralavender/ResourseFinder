@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/25a29fc8-5281-48ff-951a-d040da026134
 <p align="center">
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
@@ -377,9 +379,18 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+
+
+
+
+
+
+https://github.com/user-attachments/assets/e36c0589-b312-4023-b81b-ee34c6bb0a31
+The video shows how users navigate the platform to find opportunities through a simple and guided flow. It demonstrates selecting a category, entering details, and instantly getting personalized eligible results. The system uses HTML, CSS, JavaScript, and a JSON database to provide fast and user-friendly filtering.
+
+
+
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
