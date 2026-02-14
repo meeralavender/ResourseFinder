@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/25a29fc8-5281-48ff-951a-d040da026134
 - Member 2: [Meera Nandita S] - [Government Engineering College Thrissur]
 
 ### Hosted Project Link
-[https://meeralavender.github.io/ResourseFinder/]
+[https://resoursefinder.onrender.com]
 
 ### Project Description
 [AmIEligible is a user-friendly platform that helps individuals discover government schemes, scholarships, jobs, and exams they are eligible for in under 60 seconds. By collecting basic details through an interactive step-by-step process, it filters and displays personalized opportunities instantly. The goal is to ensure no one misses out on important opportunities due to lack of awareness.
