@@ -20,7 +20,7 @@
       },
       "description": "Financial assistance for SC/ST students pursuing higher education",
       "deadline": "31st March 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.nationalmerit.org/s/1758/start.aspx?sid=1758&gid=2"
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       },
       "description": "Scholarship for OBC students for post-matriculation studies",
       "deadline": "30th April 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AB02E984835E89FEFDB316E301CE6A991F41C5D42B01A7D7E"
     },
     {
       "id": 3,
@@ -64,7 +64,7 @@
       },
       "description": "Financial support for students from minority communities",
       "deadline": "15th May 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.minorityaffairs.gov.in/show_content.php?lang=1&level=2&ls_id=661&lid=823"
     },
     {
       "id": 4,
@@ -86,7 +86,7 @@
       },
       "description": "Special scholarship for students with disabilities",
       "deadline": "31st May 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://depwd.gov.in/en/document-category/scholarship/"
     },
     {
       "id": 5,
@@ -108,7 +108,7 @@
       },
       "description": "Scholarship for single girl child pursuing higher education",
       "deadline": "30th June 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.cbse.gov.in/cbsenew/scholar.html"
     },
     {
       "id": 6,
@@ -130,7 +130,7 @@
       },
       "description": "Financial assistance for students from BPL families",
       "deadline": "31st July 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.scholarship.dhse.kerala.gov.in/Login"
     },
     {
       "id": 7,
@@ -152,7 +152,7 @@
       },
       "description": "Merit-based scholarship for Gujarat state students",
       "deadline": "15th August 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://gssp.gujarat.gov.in/"
     },
     {
       "id": 8,
@@ -174,7 +174,7 @@
       },
       "description": "Scholarship for economically weaker section students",
       "deadline": "30th September 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.egovtschemes.com/dr-ambedkar-post-matric-scholarship-for-ebc/"
     },
     {
       "id": 9,
@@ -196,7 +196,7 @@
       },
       "description": "Merit-based scholarship for class 10-12 students",
       "deadline": "31st October 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://dsel.education.gov.in/en/scheme/nmmss"
     },
     {
       "id": 10,
@@ -218,7 +218,7 @@
       },
       "description": "Special scholarship for higher education students",
       "deadline": "30th November 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.aicte-jk-scholarship-gov.in/"
     },
     {
       "id": 11,
@@ -241,7 +241,7 @@
       },
       "description": "Scholarship exclusively for female students",
       "deadline": "31st December 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://womensempowermentscholarship.org/"
     },
     {
       "id": 12,
@@ -263,7 +263,7 @@
       },
       "description": "Financial assistance for Muslim minority students",
       "deadline": "28th February 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.scholarship.minoritywelfare.kerala.gov.in/dmw_ma/dmw_ind.php"
     },
     {
       "id": 13,
@@ -285,7 +285,7 @@
       },
       "description": "Central government scholarship for college students",
       "deadline": "31st January 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://scholarships.gov.in/"
     },
     {
       "id": 14,
@@ -307,7 +307,7 @@
       },
       "description": "Scholarship for engineering and technical students",
       "deadline": "15th March 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.aicte.gov.in/opportunities/students/scholarships"
     },
     {
       "id": 15,
@@ -329,7 +329,7 @@
       },
       "description": "Fellowship for doctoral research students",
       "deadline": "30th April 2025",
-      "applicationLink": "https://example.com/apply"
+      "applicationLink": "https://www.ugc.gov.in/"
     }
   ],
   "exams": [
@@ -348,7 +348,7 @@
       "description": "Joint Entrance Examination for admission to engineering colleges",
       "examDate": "April 2025",
       "applicationDeadline": "31st March 2025",
-      "registrationLink": "https://jeemain.nta.ac.in"
+      "registrationLink": "https://jeemain.nta.nic.in/"
     },
     {
       "id": 2,
@@ -399,7 +399,7 @@
       "description": "Common Admission Test for management programs",
       "examDate": "January 2025",
       "applicationDeadline": "31st December 2024",
-      "registrationLink": "https://catexam.nta.ac.in"
+      "registrationLink": "https://iimcat.ac.in/per/g06/pub/32842/ASM/WebPortal/1/index.html?32842@@1@@1"
     },
     {
       "id": 5,
@@ -433,7 +433,7 @@
       "description": "Combined Graduate Level Exam for government jobs",
       "examDate": "June 2025",
       "applicationDeadline": "31st May 2025",
-      "registrationLink": "https://ssc.nic.in"
+      "registrationLink": "https://ssc.gov.in/"
     },
     {
       "id": 7,
@@ -489,12 +489,12 @@
       "description": "Looking for skilled software developers to join our growing team",
       "postedDate": "2024-12-10",
       "applicationDeadline": "31st January 2025",
-      "applyLink": "https://jobs.techsolutions.com"
+      "applyLink": "https://www.techsolutionsinc.com/careers/"
     },
     {
       "id": 2,
       "name": "Data Analyst",
-      "company": "Analytics Corp",
+      "company": "Seimen's Energy",
       "jobType": "Full-time",
       "location": "Mumbai",
       "salary": "₹5,00,000 - ₹8,00,000 per annum",
@@ -509,7 +509,7 @@
       "description": "Seeking data analysts with strong analytical and problem-solving skills",
       "postedDate": "2024-12-08",
       "applicationDeadline": "30th January 2025",
-      "applyLink": "https://jobs.analyticscorp.com"
+      "applyLink": "https://jobs.siemens-energy.com/en_US/jobs"
     },
     {
       "id": 3,
@@ -569,7 +569,7 @@
       "description": "Recruitment for banking officer positions in various branches",
       "postedDate": "2024-12-01",
       "applicationDeadline": "31st December 2024",
-      "applyLink": "https://jobs.nationalbank.co.in"
+      "applyLink": "https://bankofindia.bank.in/"
     },
     {
       "id": 6,
@@ -686,7 +686,7 @@
       },
       "description": "Universal access to banking services for all citizens",
       "applicationDeadline": "Ongoing",
-      "applyLink": "https://pmjdy.gov.in"
+      "applyLink": "https://www.pmjdy.gov.in/"
     },
     {
       "id": 4,
@@ -705,7 +705,7 @@
       },
       "description": "Savings scheme for girl child education and marriage",
       "applicationDeadline": "Ongoing",
-      "applyLink": "https://ssymis.nic.in"
+      "applyLink": "https://transformingindia.mygov.in/scheme/sukanya-samriddhi-yojana/"
     },
     {
       "id": 5,
@@ -724,7 +724,7 @@
       },
       "description": "Free liquified petroleum gas connection for poor women",
       "applicationDeadline": "Ongoing",
-      "applyLink": "https://ujjwalayojana.gov.in"
+      "applyLink": "https://www.pmuy.gov.in/index.aspx"
     },
     {
       "id": 6,
@@ -762,7 +762,7 @@
       },
       "description": "Monthly pension for senior citizens below poverty line",
       "applicationDeadline": "Ongoing",
-      "applyLink": "https://nsap.nic.in"
+      "applyLink": "https://pmschemehub.in/nsap-scheme/"
     },
     {
       "id": 8,
@@ -781,7 +781,7 @@
       },
       "description": "Free vocational training to develop skilled workforce",
       "applicationDeadline": "Ongoing",
-      "applyLink": "https://www.skillindia.gov.in"
+      "applyLink": "https://skillindiamission.in/"
     }
   ],
   "applications": [
@@ -883,7 +883,7 @@
       "description": "Prestigious fellowship to pursue postgraduate studies in the United States",
       "applicationDeadline": "15th March 2026",
       "courseType": "fellowship",
-      "applyLink": "https://www.fulbright.org.in"
+      "applyLink": "https://fulbrightscholars.org/"
     },
     {
       "id": 6,
